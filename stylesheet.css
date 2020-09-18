@@ -2,12 +2,26 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-	background-color: #faf9f2;
 	font-family: monospace;
 }
 
 body {
 	font-size: 18px;
+	background-color: #faf9f2;
+}
+
+.nav-menu {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	background-color: #f2eed8;
+	margin: auto;
+	text-align: center;
+}
+
+.nav-menu-option {
+	display: inline;
+	color: #f2eed8;
 }
 
 h1 {
