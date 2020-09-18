@@ -2,21 +2,23 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-	font-family: monospace;
 }
 
 body {
 	font-size: 18px;
-	background-color: #faf9f2;
+  background-color: #faf9f2;
 }
+
+/*---------------------Header Detialing---------------------*/
 
 .nav-menu {
 	list-style-type: none;
 	margin: 0;
-	padding: 0;
+	padding: 15px;
 	background-color: #f2eed8;
-	margin: auto;
-	text-align: center;
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 2px solid #5D6063;
 }
 
 .nav-menu-option {
@@ -25,37 +27,68 @@ body {
 }
 
 h1 {
-	text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 	text-emphasis: bold;
 	padding: 20px;
 	background-color: #f2eed8;
-	border-bottom: 2px solid #5D6063;
 	width: auto;
+  height: 100px;
 	box-sizing: border-box;
 	margin: inherit;
 }
 
-h2 {
-	padding: 10px;
-	margin-left: 30px;
-	text-decoration-line: underline;
+/*---------------------Page Detailing---------------------*/
+
+.page {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 10px;
 }
 
-p, ul {
-	padding: 5px;
+.section {
+  display: flex;
+  justify-content: center;
+  border: 1px solid #5D6063;
+  background-color: #fffefa;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  width: 60%;
+  padding: 5px;
+  margin: 5px;
+}
+
+/*---------------------Content Detailing---------------------*/
+
+h2 {
+	padding: 10px;
+	text-decoration-line: underline;
 }
 
 p {
 	margin-left: 20px;
-	font-size: 1.25em;
 }
 
 ul {
 	margin-left: 40px;
 	padding: 10px;
-	font-size: 1.2em;
 }
 
+/*---------------------Media Queries---------------------*/
+
+@media screen and (min-width: 961px) {
+  .section {
+    width: 40%;
+  }
+}
+
+
+/*---------------------Fun Button---------------------*/
+
+/*
 .big-button {
 	display: block;
 	text-decoration: none;
@@ -83,3 +116,4 @@ ul {
 	color: #FFF;
   background-color: #FFF787;
 }
+*/
